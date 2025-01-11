@@ -1,0 +1,135 @@
+/* General Font Styling */
+.search-group,
+.advanced-search-group,
+.page-title,
+nav ul {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+
+/* Center the entire search container */
+.search-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the search bar */
+.search-bar {
+    width: 200%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Button container to align buttons side by side */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Style the buttons */
+.search-button,
+.lucky-button {
+    background-color: #f2f2f2;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for buttons */
+.search-button:hover,
+.lucky-button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Navigation Links */
+nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+/* Grid layout for the advanced search group */
+.advanced-search-group {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 200px 300px 1fr;
+    gap: 10px 20px;
+    max-width: 900px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+/* Styling for the input column in advanced search */
+.input-column {
+    display: flex;
+    align-items: center;
+}
+
+.input-column input {
+    width: 100%;
+    padding: 8px;
+}
+
+/* Styling for the explanation column in advanced search */
+.explanation-column {
+    display: flex;
+    align-items: center;
+}
+
+.explanation-column p {
+    margin: 0;
+}
+
+/* Page title styling */
+.page-title {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Blue button styling for the advanced search page */
+.button-container input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hover effect for blue button */
+.button-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}

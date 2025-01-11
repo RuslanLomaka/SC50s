@@ -1,60 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Advanced Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <nav>
     <ul>
-        <li><a href="index.html">Google Search</a></li>
+        <li><a href="index.html">Google search</a></li>
     </ul>
 </nav>
-
-<h1>Advanced search</h1>
-
-<div class="advanced-search-group">
-    <div class="input-field">
-        <label for="all-words">all these words:</label>
-        <input type="text" id="all-words" name="all-words">
+<h1 class="page-title">Advanced search</h1>
+<form action="https://www.google.com/search" method="GET">
+    <div class="advanced-search-group">
+        <!-- Zero row -->
+        <div class="label-column">
+            <h4><strong>Find pages with...</strong></h4>
+        </div>
+        <div class="input-column"></div>
+        <div class="explanation-column">
+            <h4><strong>To do this in the search box</strong>.</h4>
+        </div>
+        <!-- First row -->
+        <div class="label-column">
+            <label for="all-words">all these words:</label>
+        </div>
+        <div class="input-column">
+            <input type="text" id="all-words" name="as_q">
+        </div>
+        <div class="explanation-column">
+            <p>Type the important words: <strong>tri-colour rat terrier</strong></p>
+        </div>
+        <!-- Second row -->
+        <div class="label-column">
+            <label for="exact-words">this exact word or phrase:</label>
+        </div>
+        <div class="input-column">
+            <input type="text" id="exact-words" name="as_epq">
+        </div>
+        <div class="explanation-column">
+            <p>Put exact words in quotes: <strong>"rat terrier"</strong></p>
+        </div>
+        <!-- Third row -->
+        <div class="label-column">
+            <label for="any-words">any of these words:</label>
+        </div>
+        <div class="input-column">
+            <input type="text" id="any-words" name="as_oq">
+        </div>
+        <div class="explanation-column">
+            <p>Type <strong>OR</strong> between all the words you want: <strong>miniature OR standard</strong></p>
+        </div>
+        <!-- Fourth row -->
+        <div class="label-column">
+            <label for="none-words">none of these words:</label>
+        </div>
+        <div class="input-column">
+            <input type="text" id="none-words" name="as_eq">
+        </div>
+        <div class="explanation-column">
+            <p>Put a minus sign just before words that you don't want: <strong>-rodent, -"Jack Russell"</strong></p>
+        </div>
     </div>
-    <div class="explanation">
-        <p>Type the important words: <strong>tri-colour rat terrier</strong></p>
+    <div class="button-container">
+        <input type="submit" value="Search">
     </div>
-</div>
-
-<div class="advanced-search-group">
-    <div class="input-field">
-        <label for="exact-words">exact word or phrase:</label>
-        <input type="text" id="exact-words" name="exact-words">
-    </div>
-    <div class="explanation">
-        <p>Put exact words in quotes: <strong>"rat terrier"</strong></p>
-    </div>
-</div>
-
-<div class="advanced-search-group">
-    <div class="input-field">
-        <label for="any-words">any of these words:</label>
-        <input type="text" id="any-words" name="any-words">
-    </div>
-    <div class="explanation">
-        <p>Type <strong>OR</strong> between all the words you want: <strong>miniature OR standard</strong></p>
-    </div>
-</div>
-
-<div class="advanced-search-group">
-    <div class="input-field">
-        <label for="none-words">none of these words:</label>
-        <input type="text" id="none-words" name="none-words">
-    </div>
-    <div class="explanation">
-        <p>Put a minus sign just before words that you don't want: <strong>-rodent, -"Jack Russell"</strong></p>
-    </div>
-</div>
-
-<div class="button-container">
-<input type="submit" value="Search">
-</div>
-
+</form>
 </body>
 </html>
